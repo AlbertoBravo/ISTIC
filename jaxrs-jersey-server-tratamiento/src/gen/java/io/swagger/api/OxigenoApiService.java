@@ -22,7 +22,7 @@ import javax.validation.constraints.*;
 
 public abstract class OxigenoApiService {
     
-    public abstract Response obtenerOxigeno( @NotNull Integer usuarioId,SecurityContext securityContext) throws NotFoundException;
+    public abstract Response obtenerOxigeno( @NotNull String usuarioId,SecurityContext securityContext) throws NotFoundException;
     
 }
 

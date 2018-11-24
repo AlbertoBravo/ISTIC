@@ -22,7 +22,7 @@ import javax.validation.constraints.*;
 
 public abstract class ValoracionApiService {
     
-    public abstract Response obtenerValoracion( @NotNull Integer usuarioId,SecurityContext securityContext) throws NotFoundException;
+    public abstract Response obtenerValoracion( @NotNull String usuarioId,SecurityContext securityContext) throws NotFoundException;
     
 }
 

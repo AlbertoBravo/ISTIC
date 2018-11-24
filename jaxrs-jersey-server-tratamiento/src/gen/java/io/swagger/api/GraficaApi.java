@@ -67,7 +67,7 @@ public class GraficaApi  {
         @io.swagger.annotations.ApiResponse(code = 200, message = "operación exitosa", response = Object.class, responseContainer = "List"),
         
         @io.swagger.annotations.ApiResponse(code = 404, message = "", response = Void.class) })
-    public Response obtenerGrafica(@ApiParam(value = "Value to store",required=true) @QueryParam("usuarioId") Integer usuarioId
+    public Response obtenerGrafica(@ApiParam(value = "Value to store",required=true) @QueryParam("usuarioId") String usuarioId
 ,@Context SecurityContext securityContext)
     throws NotFoundException {
         return delegate.obtenerGrafica(usuarioId,securityContext);

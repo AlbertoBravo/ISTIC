@@ -22,7 +22,7 @@ import javax.validation.constraints.*;
 
 public abstract class PulsoApiService {
     
-    public abstract Response obtenerPulso( @NotNull Integer usuarioId,SecurityContext securityContext) throws NotFoundException;
+    public abstract Response obtenerPulso( @NotNull String usuarioId,SecurityContext securityContext) throws NotFoundException;
     
 }
 

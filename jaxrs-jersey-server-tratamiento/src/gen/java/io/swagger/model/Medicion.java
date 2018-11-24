@@ -92,7 +92,14 @@ public class Medicion   {
   
   
   private Integer oxigeno = null;
-  
+
+
+
+  @JsonProperty("valoracion")
+
+
+
+  private Integer valoracion = null;
 
   
   
@@ -101,10 +108,16 @@ public class Medicion   {
     this.medicionId = medicionId;
     return this;
   }
-  
-  
 
-  
+  public Medicion(String medicionId, String usuarioId, String tiempo, Integer pulso, Integer oxigeno, Integer valoracion) {
+    this.medicionId = medicionId;
+    this.usuarioId = usuarioId;
+    this.tiempo = tiempo;
+    this.pulso = pulso;
+    this.oxigeno = oxigeno;
+    this.oxigeno = valoracion;
+  }
+
   /**
   
   
@@ -278,7 +291,32 @@ public class Medicion   {
   public void setOxigeno(Integer oxigeno) {
     this.oxigeno = oxigeno;
   }
-  
+
+
+  /**
+
+
+   * Get valoracion
+
+
+
+   * @return oxigeno
+   **/
+
+  @JsonProperty("valoracion")
+
+  @ApiModelProperty(required = true, value = "")
+
+  @NotNull
+
+  public Integer getValoracion() {
+    return oxigeno;
+  }
+
+
+  public void setValoracion(Integer oxigeno) {
+    this.oxigeno = oxigeno;
+  }
 
   
 

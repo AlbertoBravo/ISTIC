@@ -22,7 +22,7 @@ import javax.validation.constraints.*;
 
 public abstract class GraficaApiService {
     
-    public abstract Response obtenerGrafica( @NotNull Integer usuarioId,SecurityContext securityContext) throws NotFoundException;
+    public abstract Response obtenerGrafica( @NotNull String usuarioId,SecurityContext securityContext) throws NotFoundException;
     
 }
 

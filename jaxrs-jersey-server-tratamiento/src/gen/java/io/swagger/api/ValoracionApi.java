@@ -67,7 +67,7 @@ public class ValoracionApi  {
         @io.swagger.annotations.ApiResponse(code = 200, message = "operación exitosa", response = Object.class),
         
         @io.swagger.annotations.ApiResponse(code = 404, message = "", response = Void.class) })
-    public Response obtenerValoracion(@ApiParam(value = "First operand",required=true) @QueryParam("usuarioId") Integer usuarioId
+    public Response obtenerValoracion(@ApiParam(value = "First operand",required=true) @QueryParam("usuarioId") String usuarioId
 ,@Context SecurityContext securityContext)
     throws NotFoundException {
         return delegate.obtenerValoracion(usuarioId,securityContext);

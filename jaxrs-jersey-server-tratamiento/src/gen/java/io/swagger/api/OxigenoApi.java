@@ -67,7 +67,7 @@ public class OxigenoApi  {
         @io.swagger.annotations.ApiResponse(code = 200, message = "operación exitosa", response = Object.class),
         
         @io.swagger.annotations.ApiResponse(code = 404, message = "", response = Void.class) })
-    public Response obtenerOxigeno(@ApiParam(value = "Value to store",required=true) @QueryParam("usuarioId") Integer usuarioId
+    public Response obtenerOxigeno(@ApiParam(value = "Value to store",required=true) @QueryParam("usuarioId") String usuarioId
 ,@Context SecurityContext securityContext)
     throws NotFoundException {
         return delegate.obtenerOxigeno(usuarioId,securityContext);

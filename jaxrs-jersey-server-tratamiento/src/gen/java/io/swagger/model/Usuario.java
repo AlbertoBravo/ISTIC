@@ -113,10 +113,18 @@ public class Usuario   {
     this.usuarioId = usuarioId;
     return this;
   }
-  
-  
 
-  
+
+  public Usuario(String usuarioId, String nombre, String apellidos, String email, String telefono, String localidad) {
+    this.usuarioId = usuarioId;
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+    this.email = email;
+    this.telefono = telefono;
+    this.localidad = localidad;
+  }
+
+
   /**
   
   
