@@ -31,7 +31,7 @@ import javax.validation.constraints.*;
 
 
 @io.swagger.annotations.Api(description = "the grafica API")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-23T18:15:38.570Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-24T18:52:21.602Z[GMT]")
 
 public class GraficaApi  {
    private final GraficaApiService delegate;
@@ -62,7 +62,7 @@ public class GraficaApi  {
     
     
     @Produces({ "application/json" })
-    @io.swagger.annotations.ApiOperation(value = "Obtener datos del pulso del usuario en un día", notes = "Obtener datos del pulso del usuario en un día", response = Object.class, responseContainer = "List", tags={ "Basic", })
+    @io.swagger.annotations.ApiOperation(value = "Obtener datos del pulso del usuario en un día", notes = "Obtener datos del pulso del usuario en un día", response = Object.class, responseContainer = "List", tags={ "medicion", })
     @io.swagger.annotations.ApiResponses(value = { 
         @io.swagger.annotations.ApiResponse(code = 200, message = "operación exitosa", response = Object.class, responseContainer = "List"),
         

@@ -31,7 +31,7 @@ import javax.validation.constraints.*;
 
 
 @io.swagger.annotations.Api(description = "the oxigeno API")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-23T18:15:38.570Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-24T18:52:21.602Z[GMT]")
 
 public class OxigenoApi  {
    private final OxigenoApiService delegate;
@@ -62,7 +62,7 @@ public class OxigenoApi  {
     
     
     @Produces({ "application/json" })
-    @io.swagger.annotations.ApiOperation(value = "Obtener datos de oxigeno del usuario", notes = "Obtener datos de oxigeno del usuario", response = Object.class, tags={ "Basic", })
+    @io.swagger.annotations.ApiOperation(value = "Obtener datos de oxigeno del usuario", notes = "Obtener datos de oxigeno del usuario", response = Object.class, tags={ "medicion", })
     @io.swagger.annotations.ApiResponses(value = { 
         @io.swagger.annotations.ApiResponse(code = 200, message = "operación exitosa", response = Object.class),
         
