@@ -32,92 +32,105 @@ import javax.validation.constraints.*;
 /**
  * Medicion
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-26T00:15:19.972Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-24T18:52:21.602Z[GMT]")
 public class Medicion   {
-  
-    
-      
-  
+
+
+
+
   @JsonProperty("medicionId")
-  
-  
-  
-  
+
+
+
+
   private String medicionId = null;
-  
 
-  
-    
-      
-  
+
+
+
+
+
   @JsonProperty("usuarioId")
-  
-  
-  
-  
+
+
+
+
   private String usuarioId = null;
-  
 
-  
-    
-      
-  
+
+
+
+
+
   @JsonProperty("tiempo")
-  
-  
-  
-  
+
+
+
+
   private String tiempo = null;
-  
 
-  
-    
-      
-  
+
+
+
+
+
   @JsonProperty("pulso")
-  
-  
-  
-  
+
+
+
+
   private Integer pulso = null;
-  
 
-  
-    
-      
-  
+
+
+
+
+
   @JsonProperty("oxigeno")
-  
-  
-  
-  
-  private Integer oxigeno = null;
-  
 
-  
-  
-  
+
+
+
+  private Integer oxigeno = null;
+
+
+
+  @JsonProperty("valoracion")
+
+
+
+  private Integer valoracion = null;
+
+
+
+
   public Medicion medicionId(String medicionId) {
     this.medicionId = medicionId;
     return this;
   }
-  
-  
 
-  
+  public Medicion(String medicionId, String usuarioId, String tiempo, Integer pulso, Integer oxigeno, Integer valoracion) {
+    this.medicionId = medicionId;
+    this.usuarioId = usuarioId;
+    this.tiempo = tiempo;
+    this.pulso = pulso;
+    this.oxigeno = oxigeno;
+    this.oxigeno = valoracion;
+  }
+
   /**
-  
-  
+
+
    * Get medicionId
-  
-  
-  
+
+
+
    * @return medicionId
    **/
- 
-  
+
+
   @JsonProperty("medicionId")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -125,36 +138,36 @@ public class Medicion   {
   public String getMedicionId() {
     return medicionId;
   }
-  
+
 
   public void setMedicionId(String medicionId) {
     this.medicionId = medicionId;
   }
-  
 
-  
-  
+
+
+
   public Medicion usuarioId(String usuarioId) {
     this.usuarioId = usuarioId;
     return this;
   }
-  
-  
 
-  
+
+
+
   /**
-  
-  
+
+
    * Get usuarioId
-  
-  
-  
+
+
+
    * @return usuarioId
    **/
- 
-  
+
+
   @JsonProperty("usuarioId")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -162,36 +175,36 @@ public class Medicion   {
   public String getUsuarioId() {
     return usuarioId;
   }
-  
+
 
   public void setUsuarioId(String usuarioId) {
     this.usuarioId = usuarioId;
   }
-  
 
-  
-  
+
+
+
   public Medicion tiempo(String tiempo) {
     this.tiempo = tiempo;
     return this;
   }
-  
-  
 
-  
+
+
+
   /**
-  
-  
+
+
    * Get tiempo
-  
-  
-  
+
+
+
    * @return tiempo
    **/
- 
-  
+
+
   @JsonProperty("tiempo")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -199,36 +212,36 @@ public class Medicion   {
   public String getTiempo() {
     return tiempo;
   }
-  
+
 
   public void setTiempo(String tiempo) {
     this.tiempo = tiempo;
   }
-  
 
-  
-  
+
+
+
   public Medicion pulso(Integer pulso) {
     this.pulso = pulso;
     return this;
   }
-  
-  
 
-  
+
+
+
   /**
-  
-  
+
+
    * Get pulso
-  
-  
-  
+
+
+
    * @return pulso
    **/
- 
-  
+
+
   @JsonProperty("pulso")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -236,36 +249,36 @@ public class Medicion   {
   public Integer getPulso() {
     return pulso;
   }
-  
+
 
   public void setPulso(Integer pulso) {
     this.pulso = pulso;
   }
-  
 
-  
-  
+
+
+
   public Medicion oxigeno(Integer oxigeno) {
     this.oxigeno = oxigeno;
     return this;
   }
-  
-  
 
-  
+
+
+
   /**
-  
-  
+
+
    * Get oxigeno
-  
-  
-  
+
+
+
    * @return oxigeno
    **/
- 
-  
+
+
   @JsonProperty("oxigeno")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -273,14 +286,39 @@ public class Medicion   {
   public Integer getOxigeno() {
     return oxigeno;
   }
-  
+
 
   public void setOxigeno(Integer oxigeno) {
     this.oxigeno = oxigeno;
   }
-  
 
-  
+
+  /**
+
+
+   * Get valoracion
+
+
+
+   * @return oxigeno
+   **/
+
+  @JsonProperty("valoracion")
+
+  @ApiModelProperty(required = true, value = "")
+
+  @NotNull
+
+  public Integer getValoracion() {
+    return oxigeno;
+  }
+
+
+  public void setValoracion(Integer oxigeno) {
+    this.oxigeno = oxigeno;
+  }
+
+
 
 
   @Override
@@ -293,10 +331,10 @@ public class Medicion   {
     }
     Medicion medicion = (Medicion) o;
     return Objects.equals(this.medicionId, medicion.medicionId) &&
-        Objects.equals(this.usuarioId, medicion.usuarioId) &&
-        Objects.equals(this.tiempo, medicion.tiempo) &&
-        Objects.equals(this.pulso, medicion.pulso) &&
-        Objects.equals(this.oxigeno, medicion.oxigeno);
+            Objects.equals(this.usuarioId, medicion.usuarioId) &&
+            Objects.equals(this.tiempo, medicion.tiempo) &&
+            Objects.equals(this.pulso, medicion.pulso) &&
+            Objects.equals(this.oxigeno, medicion.oxigeno);
   }
 
   @Override
@@ -311,7 +349,7 @@ public class Medicion   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Medicion {\n");
-    
+
     sb.append("    medicionId: ").append(toIndentedString(medicionId)).append("\n");
     sb.append("    usuarioId: ").append(toIndentedString(usuarioId)).append("\n");
     sb.append("    tiempo: ").append(toIndentedString(tiempo)).append("\n");

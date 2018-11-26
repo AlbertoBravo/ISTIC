@@ -32,104 +32,112 @@ import javax.validation.constraints.*;
 /**
  * Usuario
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-26T00:15:19.972Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-24T18:52:21.602Z[GMT]")
 public class Usuario   {
-  
-    
-      
-  
+
+
+
+
   @JsonProperty("usuarioId")
-  
-  
-  
-  
+
+
+
+
   private String usuarioId = null;
-  
 
-  
-    
-      
-  
+
+
+
+
+
   @JsonProperty("nombre")
-  
-  
-  
-  
+
+
+
+
   private String nombre = null;
-  
 
-  
-    
-      
-  
+
+
+
+
+
   @JsonProperty("apellidos")
-  
-  
-  
-  
+
+
+
+
   private String apellidos = null;
-  
 
-  
-    
-      
-  
+
+
+
+
+
   @JsonProperty("email")
-  
-  
-  
-  
+
+
+
+
   private String email = null;
-  
 
-  
-    
-      
-  
+
+
+
+
+
   @JsonProperty("telefono")
-  
-  
-  
-  
+
+
+
+
   private String telefono = null;
-  
 
-  
-    
-      
-  
+
+
+
+
+
   @JsonProperty("localidad")
-  
-  
-  
-  
-  private String localidad = null;
-  
 
-  
-  
-  
+
+
+
+  private String localidad = null;
+
+
+
+
+
   public Usuario usuarioId(String usuarioId) {
     this.usuarioId = usuarioId;
     return this;
   }
-  
-  
 
-  
+
+  public Usuario(String usuarioId, String nombre, String apellidos, String email, String telefono, String localidad) {
+    this.usuarioId = usuarioId;
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+    this.email = email;
+    this.telefono = telefono;
+    this.localidad = localidad;
+  }
+
+
   /**
-  
-  
+
+
    * Get usuarioId
-  
-  
-  
+
+
+
    * @return usuarioId
    **/
- 
-  
+
+
   @JsonProperty("usuarioId")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -137,36 +145,36 @@ public class Usuario   {
   public String getUsuarioId() {
     return usuarioId;
   }
-  
+
 
   public void setUsuarioId(String usuarioId) {
     this.usuarioId = usuarioId;
   }
-  
 
-  
-  
+
+
+
   public Usuario nombre(String nombre) {
     this.nombre = nombre;
     return this;
   }
-  
-  
 
-  
+
+
+
   /**
-  
-  
+
+
    * Get nombre
-  
-  
-  
+
+
+
    * @return nombre
    **/
- 
-  
+
+
   @JsonProperty("nombre")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -174,36 +182,36 @@ public class Usuario   {
   public String getNombre() {
     return nombre;
   }
-  
+
 
   public void setNombre(String nombre) {
     this.nombre = nombre;
   }
-  
 
-  
-  
+
+
+
   public Usuario apellidos(String apellidos) {
     this.apellidos = apellidos;
     return this;
   }
-  
-  
 
-  
+
+
+
   /**
-  
-  
+
+
    * Get apellidos
-  
-  
-  
+
+
+
    * @return apellidos
    **/
- 
-  
+
+
   @JsonProperty("apellidos")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -211,36 +219,36 @@ public class Usuario   {
   public String getApellidos() {
     return apellidos;
   }
-  
+
 
   public void setApellidos(String apellidos) {
     this.apellidos = apellidos;
   }
-  
 
-  
-  
+
+
+
   public Usuario email(String email) {
     this.email = email;
     return this;
   }
-  
-  
 
-  
+
+
+
   /**
-  
-  
+
+
    * Get email
-  
-  
-  
+
+
+
    * @return email
    **/
- 
-  
+
+
   @JsonProperty("email")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -248,36 +256,36 @@ public class Usuario   {
   public String getEmail() {
     return email;
   }
-  
+
 
   public void setEmail(String email) {
     this.email = email;
   }
-  
 
-  
-  
+
+
+
   public Usuario telefono(String telefono) {
     this.telefono = telefono;
     return this;
   }
-  
-  
 
-  
+
+
+
   /**
-  
-  
+
+
    * Get telefono
-  
-  
-  
+
+
+
    * @return telefono
    **/
- 
-  
+
+
   @JsonProperty("telefono")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -285,36 +293,36 @@ public class Usuario   {
   public String getTelefono() {
     return telefono;
   }
-  
+
 
   public void setTelefono(String telefono) {
     this.telefono = telefono;
   }
-  
 
-  
-  
+
+
+
   public Usuario localidad(String localidad) {
     this.localidad = localidad;
     return this;
   }
-  
-  
 
-  
+
+
+
   /**
-  
-  
+
+
    * Get localidad
-  
-  
-  
+
+
+
    * @return localidad
    **/
- 
-  
+
+
   @JsonProperty("localidad")
-  
+
   @ApiModelProperty(required = true, value = "")
 
   @NotNull
@@ -322,14 +330,14 @@ public class Usuario   {
   public String getLocalidad() {
     return localidad;
   }
-  
+
 
   public void setLocalidad(String localidad) {
     this.localidad = localidad;
   }
-  
 
-  
+
+
 
 
   @Override
@@ -342,11 +350,11 @@ public class Usuario   {
     }
     Usuario usuario = (Usuario) o;
     return Objects.equals(this.usuarioId, usuario.usuarioId) &&
-        Objects.equals(this.nombre, usuario.nombre) &&
-        Objects.equals(this.apellidos, usuario.apellidos) &&
-        Objects.equals(this.email, usuario.email) &&
-        Objects.equals(this.telefono, usuario.telefono) &&
-        Objects.equals(this.localidad, usuario.localidad);
+            Objects.equals(this.nombre, usuario.nombre) &&
+            Objects.equals(this.apellidos, usuario.apellidos) &&
+            Objects.equals(this.email, usuario.email) &&
+            Objects.equals(this.telefono, usuario.telefono) &&
+            Objects.equals(this.localidad, usuario.localidad);
   }
 
   @Override
@@ -361,7 +369,7 @@ public class Usuario   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Usuario {\n");
-    
+
     sb.append("    usuarioId: ").append(toIndentedString(usuarioId)).append("\n");
     sb.append("    nombre: ").append(toIndentedString(nombre)).append("\n");
     sb.append("    apellidos: ").append(toIndentedString(apellidos)).append("\n");

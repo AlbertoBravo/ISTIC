@@ -31,10 +31,10 @@ import javax.validation.constraints.*;
 /**
  * Mediciones
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-26T00:15:19.972Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.java.JavaJerseyServerCodegen", date = "2018-11-24T18:52:21.602Z[GMT]")
 public class Mediciones extends ArrayList<Medicion>  {
-  
-  
+
+
 
 
   @Override
