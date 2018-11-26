@@ -1,6 +1,2 @@
 language: java
 jdk: oraclejdk8
-deploy:
-  provider: heroku
-  api_key: eymkSUn+cfcN1ihp7yadfLguHPRmkn5iMewdWD3alrOnoRO1Efknx4BlTdxB4A67LfANZ+WRFiBjiuzXodIyyGMe/1HNromhqVjqVj1gzeaoFLGghTjwKua2y80/cZzPH0aXpsvYx5CHLnH7iwBZPaE41W1aLHTTxRm4vgf2Gh8=
-app: istic-tratamiento
